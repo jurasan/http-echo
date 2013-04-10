@@ -13,8 +13,8 @@ The server will response to any URL.
 ## Example request and response
 
 Request:
-```HTTP
-GET http://localhost:3000/mytest?status=500&contentType=application/json&body={error:"a message!"}
+```
+GET http://localhost:3000/mytest?status=500&contentType=application/json&body={"error":"a message!"}
 ```
 
 Response:
@@ -25,5 +25,5 @@ Content-Length: 20
 Date: Wed, 10 Apr 2013 21:05:18 GMT
 Connection: keep-alive
 
-{error:"a message!"}
+{"error":"a message!"}
 ```
