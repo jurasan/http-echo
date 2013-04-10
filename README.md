@@ -1,6 +1,8 @@
 # http-echo
 
-A simple node.js HTTP server for testing that will echo back a response, which you can control by passing querystring parameters.
+A simple node.js HTTP server for testing that will echo back a response, which you can control by passing querystring parameters. 
+
+The server will response to any URL.
 
 ## Available parameters
 
