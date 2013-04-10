@@ -8,8 +8,6 @@ server.on("request", function (request, response) {
   var uri = url.parse(request.url);
   var qs = uri.query ? querystring.parse(uri.query) : {};
 
-  console.log(qs);
-
   var status = qs.status || 200;
   var contentType = qs.contentType || "text/plain";
   var body = qs.body || "hello there!";
@@ -18,6 +16,8 @@ server.on("request", function (request, response) {
     "Content-Type": contentType,
     "Content-Length": body.length
   });
+
+  console.log(uri.pathname + " - HTTP " + status + " (" + contentType + "): " + body);
 
   response.end(body);
 });
